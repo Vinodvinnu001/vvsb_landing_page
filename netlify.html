@@ -1,0 +1,12 @@
+[[redirects]]
+    from = "/*"
+    to = "/index.php"
+    status = 200
+    force = false
+    query = {path = ":path"} # apply this rule for /?path=example
+    conditions = {Role = ["admin"]}
+    
+[[redirects]]
+    from = "/*"
+    to = "/index.php"
+    status = 302
